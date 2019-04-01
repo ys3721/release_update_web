@@ -21,7 +21,7 @@ public class ServerListServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setHeader("Content-Type","text/html;charset=UTF-8");
         List<File> fileList = new ArrayList<>();
-        File serversPath = new File("C:/servers");
+        File serversPath = new File("/Users/yaoshuai/data2/servers/");
         for (File _file : serversPath.listFiles()) {
             if (_file.isFile() && _file.getName().endsWith("config")) {
                 fileList.add(_file);
@@ -29,10 +29,11 @@ public class ServerListServlet extends HttpServlet {
         }
         response.getWriter().println("<html><body>");
         for (File _configFile : fileList) {
-            response.getWriter().println(_configFile.getName());
+            response.getWriter().println(_configFile.getName()+"</br>");
         }
-        response.getWriter().println("<a href=\"./add.sl\">部署新服</a>");
+        response.getWriter().println("<a href=\"./add_server.html\">部署新服</a>");
         response.getWriter().println("</body></html>");
+
     }
 
 }
