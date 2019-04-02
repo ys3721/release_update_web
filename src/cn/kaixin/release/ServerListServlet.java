@@ -1,5 +1,7 @@
 package cn.kaixin.release;
 
+import cn.kaixin.release.constants.ReleaseServerConstants;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +23,7 @@ public class ServerListServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setHeader("Content-Type","text/html;charset=UTF-8");
         List<File> fileList = new ArrayList<>();
-        File serversPath = new File("/Users/yaoshuai/data2/servers/");
+        File serversPath = new File(ReleaseServerConstants.SERVERS_CONFIG_DIR);
         for (File _file : serversPath.listFiles()) {
             if (_file.isFile() && _file.getName().endsWith("config")) {
                 fileList.add(_file);

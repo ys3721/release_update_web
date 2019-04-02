@@ -32,6 +32,15 @@
         <url-pattern>/list.sl</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AddServer</servlet-name>
+        <servlet-class>cn.kaixin.release.AddServerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddServer</servlet-name>
+        <url-pattern>/addServer.sl</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
