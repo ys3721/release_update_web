@@ -26,7 +26,6 @@
         <servlet-name>ServerList</servlet-name>
         <servlet-class>cn.kaixin.release.ServerListServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>ServerList</servlet-name>
         <url-pattern>/list.sl</url-pattern>
@@ -36,11 +35,18 @@
         <servlet-name>AddServer</servlet-name>
         <servlet-class>cn.kaixin.release.AddServerServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>AddServer</servlet-name>
         <url-pattern>/addServer.sl</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RunDeploy</servlet-name>
+        <servlet-class>cn.kaixin.release.RunDeployServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RunDeploy</servlet-name>
+        <url-pattern>/run.sl</url-pattern>
+    </servlet-mapping>
 
 </web-app>
