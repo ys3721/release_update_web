@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,11 +31,16 @@ public class ServerListServlet extends HttpServlet {
                 fileList.add(_file);
             }
         }
-        response.getWriter().println("<html><body>");
+        List<String> names = new ArrayList<>();
         for (File _configFile : fileList) {
-            response.getWriter().println(_configFile.getName()+"</br>");
+            names.add(_configFile.getName());
+            Collections.sort(names);
         }
-        response.getWriter().println("<a href=\"./add_server.html\">部署新服</a>");
+        response.getWriter().println("<html><body>");
+        for (String _fileName : names) {
+            response.getWriter().println(_fileName+"</br>");
+        }
+        response.getWriter().println("<a href=\"./add_server.html\">添加服务器配置</a>");
         response.getWriter().println("</body></html>");
 
     }

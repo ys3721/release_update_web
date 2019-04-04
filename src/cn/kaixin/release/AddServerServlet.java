@@ -10,6 +10,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ *
+ * @author Yao Shuai
+ *
+ */
 public class AddServerServlet extends HttpServlet {
 
     @Override
@@ -22,7 +27,7 @@ public class AddServerServlet extends HttpServlet {
 
         String content = String.format("%s 1 %s %s %s %s true\n", serverId, domain, lanIp, wanIp, serverName);
 
-        File file = new File(ReleaseServerConstants.SERVERS_CONFIG_DIR+serverName+".config");
+        File file = new File(ReleaseServerConstants.SERVERS_CONFIG_DIR + serverName+".config");
         PrintWriter writer = new PrintWriter(new FileOutputStream(file));
 
         writer.write(content);

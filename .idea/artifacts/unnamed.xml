@@ -6,9 +6,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="release_update_web" />
         </element>
-        <element id="directory" name="lib">
-          <element id="file-copy" path="F:/apache-tomcat-7.0.92/lib/servlet-api.jar" />
-        </element>
       </element>
       <element id="javaee-facet-resources" facet="release_update_web/web/Web" />
     </root>
