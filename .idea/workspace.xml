@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="484a8423-a472-437b-bf7d-1bc9157f6b75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/release/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/deploy_server.html" beforeDir="false" afterPath="$PROJECT_DIR$/release/deploy_server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/release/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/kaixin/release/AddServerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/kaixin/release/AddServerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/AddServerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/AddServerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/ServerListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/ServerListServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/constants/ReleaseServerConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/release/WEB-INF/classes/cn/kaixin/release/constants/ReleaseServerConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release_update_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/release_update_web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/release/WEB-INF/classes/" />
@@ -26,8 +28,55 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="release_update_web" />
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="82" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="804" column="5" lean-forward="true" selection-start-line="804" selection-start-column="5" selection-end-line="804" selection-end-column="5" />
+              <folding>
+                <element signature="e#26772#26773#0" expanded="true" />
+                <element signature="e#26815#26816#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,13 +99,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/cn/kaixin/release/ReleaseServerConstants.java" />
         <option value="$PROJECT_DIR$/release/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java" />
         <option value="$PROJECT_DIR$/release/add_server.html" />
         <option value="$PROJECT_DIR$/release/deploy_server.html" />
         <option value="$PROJECT_DIR$/release/index.html" />
         <option value="$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java" />
-        <option value="$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java" />
         <option value="$PROJECT_DIR$/src/cn/kaixin/release/AddServerServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java" />
+        <option value="$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java" />
       </list>
     </option>
   </component>
@@ -67,10 +116,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -79,13 +128,28 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
@@ -100,12 +164,16 @@
             </path>
             <path>
               <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -113,14 +181,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/release" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/release/WEB-INF/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/release/WEB-INF/lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,7 +270,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 7.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 7.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.93" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <file path="$PROJECT_DIR$/release">
@@ -368,6 +441,7 @@
       <workItem from="1554127000402" duration="916000" />
       <workItem from="1554128092481" duration="2916000" />
       <workItem from="1554213147603" duration="3885000" />
+      <workItem from="1554392914937" duration="2766000" />
     </task>
     <task id="LOCAL-00001" summary="1.添加一个输入框 用于生成配置文件。">
       <created>1554133154701</created>
@@ -387,28 +461,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29042000" />
+    <option name="totallyTimeSpent" value="32808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49659863" visible="true" weight="0.2639485" />
+      <window_info id="Structure" order="1" sideWeight="0.50340134" side_tool="true" weight="0.2639485" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="JProfiler" />
+      <window_info id="Favorites" order="6" sideWeight="0.50136983" side_tool="true" weight="0.26037195" />
+      <window_info id="Web" order="7" sideWeight="0.50136983" side_tool="true" weight="0.26037195" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287858" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" visible="true" weight="0.3983629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50214595" side_tool="true" weight="0.37635574" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -416,6 +490,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="JProfiler" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,54 +549,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java</url>
-          <line>45</line>
+          <line>41</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/data0/apache-tomcat-7.0.93/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java" />
-    <entry file="jar://F:/apache-tomcat-7.0.92/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="2178" column="45" selection-start-line="2178" selection-start-column="39" selection-end-line="2178" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/release_update_web.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/release/add_server.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/release/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://F:/apache-tomcat-7.0.92/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class" />
+    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/release/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -529,55 +573,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/io/InputStreamReader.java" />
+    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/Runtime.java" />
+    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/Process.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/release/deploy_server.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="240">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/io/InputStreamReader.java">
+    <entry file="file://$PROJECT_DIR$/release/add_server.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="166" column="15" selection-start-line="166" selection-start-column="15" selection-end-line="166" selection-end-column="15" />
+        <state>
+          <caret selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="42" column="75" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/release_update_web.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/Runtime.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/AddServerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1039">
-          <caret line="614" column="49" selection-start-line="614" selection-start-column="43" selection-end-line="614" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/Process.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/ServerListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="154" column="69" lean-forward="true" selection-start-line="154" selection-start-column="69" selection-end-line="154" selection-end-column="69" />
+        <state relative-caret-position="151">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/AddServerServlet.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="30" column="73" lean-forward="true" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="179">
+          <caret line="804" column="5" lean-forward="true" selection-start-line="804" selection-start-column="5" selection-end-line="804" selection-end-column="5" />
+          <folding>
+            <element signature="e#26772#26773#0" expanded="true" />
+            <element signature="e#26815#26816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/constants/ReleaseServerConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="82" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/kaixin/release/RunDeployServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -603,7 +669,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -626,6 +692,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

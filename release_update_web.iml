@@ -25,7 +25,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://F:/apache-tomcat-7.0.92/lib/servlet-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/release/WEB-INF/lib/servlet-api.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

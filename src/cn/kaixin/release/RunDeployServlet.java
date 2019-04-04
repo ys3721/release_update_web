@@ -4,10 +4,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,13 +39,28 @@ public class RunDeployServlet extends HttpServlet {
         for (String server:  servers) {
             servers_str += server + " ";
         }
-        String log_file = String.format("/data0/jetty/%s_logs.log", servers_str.replace(" ", "_"));
-        String command = String.format("python add_some_server.py %s >> /data0/jetty/%s_logs.log", servers_str, log_file);
-        Process process = Runtime.getRuntime().exec(command, null, new File("/data3/init_server/"));
-        try {
-            process.waitFor();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        String log_file = String.format("/Users/yaoshuai/data0/jetty/%s_logs.log", servers_str.replace(" ", "_"));
+        String command = String.format("python add_some_server.py %s", servers_str);
+        Process process = Runtime.getRuntime().exec(command, null, new File("/Users/yaoshuai/data3/init_server/"));
+        //try {
+            //process.waitFor();
+        //} catch (InterruptedException e) {
+        //    e.printStackTrace();
+        //}
+        PrintWriter printWriter = new PrintWriter(process.getOutputStream());
+        printWriter.write("y\n");
+        printWriter.flush();
+        printWriter.write("123\n");
+        printWriter.flush();
+        BufferedReader b = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String out;
+        while ((out = b.readLine()) != null) {
+            resp.getWriter().write(out);
+        }
+        BufferedReader e = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+        String eo;
+        while ((eo = b.readLine()) != null) {
+            resp.getWriter().write(eo);
         }
         BufferedReader reader = new BufferedReader(new FileReader(new File(log_file)));
         String line;
