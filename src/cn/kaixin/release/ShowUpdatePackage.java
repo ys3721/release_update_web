@@ -2,6 +2,7 @@ package cn.kaixin.release;
 
 import cn.kaixin.release.constants.ReleaseServerConstants;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,16 +25,23 @@ public class ShowUpdatePackage extends HttpServlet {
 
         File _updatePath = new File(ReleaseServerConstants.UPDATE_BASE_DIR);
 
-        String[] _targetUpdateFile;
-        _targetUpdateFile = _updatePath.list(new FilenameFilter() {
+        String[] _targetUpdateFile = _updatePath.list(new FilenameFilter() {
             private Pattern _pattern = Pattern.compile("\\*.zip");
             @Override
             public boolean accept(File dir, String name) {
-                return false;
+                return _pattern.matcher(dir.getName()).matches();
             }
         });
 
-        resp.getWriter().println("<>");
+        if (_targetUpdateFile.length != 1) {
+            resp.getWriter().println("Error！deploy zip！");
+            return;
+        }
+
+        req.setAttribute("package", _targetUpdateFile[0]);
+
+        RequestDispatcher _view = req.getRequestDispatcher("");
+
     }
 
 }
