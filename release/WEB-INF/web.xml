@@ -49,4 +49,14 @@
         <url-pattern>/run.sl</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ShowUpdatePackage</servlet-name>
+        <servlet-class>cn.kaixin.release.ShowUpdatePackage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowUpdatePackage</servlet-name>
+        <url-pattern>showUpdate.sl</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

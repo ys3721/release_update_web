@@ -1,5 +1,7 @@
 package cn.kaixin.release;
 
+import cn.kaixin.release.constants.ReleaseServerConstants;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,9 +41,8 @@ public class RunDeployServlet extends HttpServlet {
         for (String server:  servers) {
             servers_str += server + " ";
         }
-        String log_file = String.format("/Users/yaoshuai/data0/jetty/%s_logs.log", servers_str.replace(" ", "_"));
         String command = String.format("python add_some_server.py %s", servers_str);
-        Process process = Runtime.getRuntime().exec(command, null, new File("/Users/yaoshuai/data3/init_server/"));
+        Process process = Runtime.getRuntime().exec(command, null, new File(ReleaseServerConstants.WORK_BASE_DIR));
         //try {
             //process.waitFor();
         //} catch (InterruptedException e) {
@@ -50,7 +51,9 @@ public class RunDeployServlet extends HttpServlet {
         PrintWriter printWriter = new PrintWriter(process.getOutputStream());
         printWriter.write("y\n");
         printWriter.flush();
-        printWriter.write("123\n");
+        printWriter.write("y\n");
+        printWriter.flush();
+        printWriter.write("P7QQQo5o1yx9\n");
         printWriter.flush();
         BufferedReader b = new BufferedReader(new InputStreamReader(process.getInputStream()));
         String out;
@@ -61,12 +64,6 @@ public class RunDeployServlet extends HttpServlet {
         String eo;
         while ((eo = b.readLine()) != null) {
             resp.getWriter().write(eo);
-        }
-        BufferedReader reader = new BufferedReader(new FileReader(new File(log_file)));
-        String line;
-        while ((line = reader.readLine()) != null) {
-            resp.getWriter().println(line);
-            resp.getWriter().flush();
         }
     }
 }

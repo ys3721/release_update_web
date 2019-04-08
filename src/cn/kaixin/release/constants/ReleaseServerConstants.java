@@ -4,4 +4,8 @@ public class ReleaseServerConstants {
 
     public static final String SERVERS_CONFIG_DIR = "/Users/yaoshuai/data2/servers";
 
+    public static final String WORK_BASE_DIR = "/data3/init_server/";
+
+    public static final String UPDATE_BASE_DIR = "/data3/update_server/";
+
 }
