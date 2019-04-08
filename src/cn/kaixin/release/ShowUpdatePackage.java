@@ -20,16 +20,21 @@ import java.util.regex.Pattern;
 public class ShowUpdatePackage extends HttpServlet {
 
     @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         File _updatePath = new File(ReleaseServerConstants.UPDATE_BASE_DIR);
 
         String[] _targetUpdateFile = _updatePath.list(new FilenameFilter() {
-            private Pattern _pattern = Pattern.compile("\\*.zip");
+            private Pattern _pattern = Pattern.compile("\\*\\\\.zip");
 
             @Override
             public boolean accept(File dir, String name) {
-                return _pattern.matcher(dir.getName()).matches();
+                return _pattern.matcher(name).matches();
             }
         });
 
@@ -38,9 +43,10 @@ public class ShowUpdatePackage extends HttpServlet {
             return;
         }
 
-        req.setAttribute("package", _targetUpdateFile[0]);
+        req.setAttribute("packageName", _targetUpdateFile[0]);
 
-        RequestDispatcher _view = req.getRequestDispatcher("");
+        RequestDispatcher _view = req.getRequestDispatcher("update.jsp");
+        _view.forward(req, resp);
 
     }
 

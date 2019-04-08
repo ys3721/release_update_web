@@ -6,6 +6,6 @@ public class ReleaseServerConstants {
 
     public static final String WORK_BASE_DIR = "/data3/init_server/";
 
-    public static final String UPDATE_BASE_DIR = "/data3/update_server/";
+    public static final String UPDATE_BASE_DIR = "/Users/yaoshuai/data3/update_server/";
 
 }
