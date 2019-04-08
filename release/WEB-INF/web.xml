@@ -55,7 +55,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ShowUpdatePackage</servlet-name>
-        <url-pattern>showUpdate.sl</url-pattern>
+        <url-pattern>/showUpdate.sl</url-pattern>
     </servlet-mapping>
 
 
