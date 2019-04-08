@@ -20,7 +20,7 @@ public class AddServerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String serverId = req.getParameter("serverId").toLowerCase();
-        String domain = req.getParameter("domain").toLowerCase();
+        String domain = req.getParameter("domain").toLowerCase().trim().replace("wss://","");
         String lanIp = req.getParameter("lanIp").toLowerCase();
         String wanIp = req.getParameter("wanIp").toLowerCase();
         String serverName = req.getParameter("prefix").toLowerCase();
@@ -34,7 +34,13 @@ public class AddServerServlet extends HttpServlet {
         writer.flush();
         writer.close();
 
-        resp.getWriter().println("OK:" + content);
+        resp.setHeader("Content-Type","text/html;charset=UTF-8");
+        resp.getWriter().println("<html><body>");
+        resp.getWriter().println("<p>OK:" + content+"");
+        resp.getWriter().println("<p><a href=\"./add_server.html\">继续添加服务器配置</a></p>");
+        resp.getWriter().println("<p><a href=\"./index.html\">不加了，回主页</a></p>");
+        resp.getWriter().println("</body></html>");
+
         resp.getWriter().flush();
     }
 }

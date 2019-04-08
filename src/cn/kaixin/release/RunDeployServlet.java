@@ -51,19 +51,22 @@ public class RunDeployServlet extends HttpServlet {
         PrintWriter printWriter = new PrintWriter(process.getOutputStream());
         printWriter.write("y\n");
         printWriter.flush();
-        printWriter.write("y\n");
-        printWriter.flush();
+
         printWriter.write("P7QQQo5o1yx9\n");
         printWriter.flush();
+
+        printWriter.write("y\n");
+        printWriter.flush();
+
+        resp.setHeader("Content-Type","text/html;charset=UTF-8");
+        resp.getWriter().println("<html><body>");
         BufferedReader b = new BufferedReader(new InputStreamReader(process.getInputStream()));
         String out;
         while ((out = b.readLine()) != null) {
-            resp.getWriter().write(out);
+            resp.getWriter().write(out+"</br>");
+            resp.flushBuffer();
         }
-        BufferedReader e = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-        String eo;
-        while ((eo = b.readLine()) != null) {
-            resp.getWriter().write(eo);
-        }
+        resp.getWriter().write("gm后台已经重启，稍后去gm后台看看游戏服是否启动！"+"</br>");
+        resp.getWriter().println("</body></html>");
     }
 }

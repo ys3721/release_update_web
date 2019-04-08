@@ -13,9 +13,8 @@ import java.util.regex.Pattern;
 
 /**
  * @author yaoshuai
- *
+ * <p>
  * servlet is a funny thing.
- *
  */
 public class ShowUpdatePackage extends HttpServlet {
 
@@ -27,6 +26,7 @@ public class ShowUpdatePackage extends HttpServlet {
         String[] _targetUpdateFile;
         _targetUpdateFile = _updatePath.list(new FilenameFilter() {
             private Pattern _pattern = Pattern.compile("\\*.zip");
+
             @Override
             public boolean accept(File dir, String name) {
                 return false;
