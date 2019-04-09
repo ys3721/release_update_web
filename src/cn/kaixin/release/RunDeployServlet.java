@@ -21,10 +21,10 @@ import java.util.List;
 public class RunDeployServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String server_prefix1 = req.getParameter("serverId1");
-        String server_prefix2 = req.getParameter("serverId2");
-        String server_prefix3 = req.getParameter("serverId3");
-        String server_prefix4 = req.getParameter("serverId4");
+        String server_prefix1 = req.getParameter("serverId1").trim().toLowerCase();
+        String server_prefix2 = req.getParameter("serverId2").trim().toLowerCase();
+        String server_prefix3 = req.getParameter("serverId3").trim().toLowerCase();
+        String server_prefix4 = req.getParameter("serverId4").trim().toLowerCase();
 
         if (server_prefix1.isEmpty()) {
             return;

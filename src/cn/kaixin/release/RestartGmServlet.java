@@ -19,6 +19,8 @@ public class RestartGmServlet extends HttpServlet {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        resp.setHeader("Content-Type","text/html;charset=UTF-8");
+        resp.getWriter().println("<html><body>");
         Process process1 = Runtime.getRuntime().exec("sh startup.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
         BufferedReader b = new BufferedReader(new InputStreamReader(process1.getInputStream()));
         String out;
