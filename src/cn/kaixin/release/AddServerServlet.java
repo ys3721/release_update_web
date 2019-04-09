@@ -28,6 +28,12 @@ public class AddServerServlet extends HttpServlet {
         String content = String.format("%s 1 %s %s %s %s true\n", serverId, domain, lanIp, wanIp, serverName);
 
         File file = new File(ReleaseServerConstants.SERVERS_CONFIG_DIR + serverName+".config");
+        if (file.exists()) {
+            resp.setHeader("Content-Type","text/html;charset=UTF-8");
+            resp.getWriter().println("<html><body>");
+            resp.getWriter().println("<p>ERROR!:已经存在不能覆盖！！");
+            resp.getWriter().println("</body></html>");
+        }
         PrintWriter writer = new PrintWriter(new FileOutputStream(file));
 
         writer.write(content);

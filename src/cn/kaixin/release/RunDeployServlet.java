@@ -2,11 +2,14 @@ package cn.kaixin.release;
 
 import cn.kaixin.release.constants.ReleaseServerConstants;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +20,7 @@ import java.util.List;
  */
 public class RunDeployServlet extends HttpServlet {
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String server_prefix1 = req.getParameter("serverId1");
         String server_prefix2 = req.getParameter("serverId2");
         String server_prefix3 = req.getParameter("serverId3");

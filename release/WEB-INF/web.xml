@@ -58,5 +58,12 @@
         <url-pattern>/showUpdate.sl</url-pattern>
     </servlet-mapping>
 
-
+    <servlet>
+        <servlet-name>RestartGm</servlet-name>
+        <servlet-class>cn.kaixin.release.RestartGmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RestartGm</servlet-name>
+        <url-pattern>/restartGm.sl</url-pattern>
+    </servlet-mapping>
 </web-app>
