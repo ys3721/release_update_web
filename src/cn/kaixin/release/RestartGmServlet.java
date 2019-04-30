@@ -13,15 +13,22 @@ import java.util.concurrent.TimeUnit;
 public class RestartGmServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Process process = Runtime.getRuntime().exec("sh shutdown.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
+        Process process = Runtime.getRuntime().exec("shutdown.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
         try {
-            Thread.sleep(TimeUnit.SECONDS.toMillis(16));
+            Thread.sleep(TimeUnit.SECONDS.toMillis(30));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String cmd = "ps -elf |grep /data0/apache-tomcat-7.0.39/temp | grep -v grep | awk '{print $4}' |xargs kill";
+        Runtime.getRuntime().exec(cmd);
+        try {
+            Thread.sleep(TimeUnit.SECONDS.toMillis(10));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         resp.setHeader("Content-Type","text/html;charset=UTF-8");
         resp.getWriter().println("<html><body>");
-        Process process1 = Runtime.getRuntime().exec("sh startup.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
+        Process process1 = Runtime.getRuntime().exec("startup.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
         BufferedReader b = new BufferedReader(new InputStreamReader(process1.getInputStream()));
         String out;
         while ((out = b.readLine()) != null) {

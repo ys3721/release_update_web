@@ -43,13 +43,6 @@ public class AddServerServlet extends HttpServlet {
                 if (configSplit.length < 6) {
                     continue;
                 }
-                if(configSplit[3].trim().equals(lanIp) || configSplit[4].trim().equals(wanIp)) {
-                    resp.setHeader("Content-Type","text/html;charset=UTF-8");
-                    resp.getWriter().println("<html><body>");
-                    resp.getWriter().println(String.format("<p>ERROR!:IP已经存在不能覆盖！！%s %s %s", configFileName, lanIp,wanIp));
-                    resp.getWriter().println("</body></html>");
-                    return;
-                }
                 if (configSplit[0].equals(serverId)) {
                     resp.setHeader("Content-Type","text/html;charset=UTF-8");
                     resp.getWriter().println("<html><body>");
