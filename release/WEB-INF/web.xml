@@ -66,4 +66,13 @@
         <servlet-name>RestartGm</servlet-name>
         <url-pattern>/restartGm.sl</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DownloadConfig</servlet-name>
+        <servlet-class>cn.kaixin.release.DownloadConfigServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadConfig</servlet-name>
+        <url-pattern>/download_config.sl</url-pattern>
+    </servlet-mapping>
 </web-app>
