@@ -55,7 +55,8 @@ public class RunDeployServlet extends HttpServlet {
         printWriter.write("y\n");
         printWriter.flush();
 
-        printWriter.write("P7QQQo5o1yx9\n");
+        String _password = req.getServletContext().getInitParameter("ck");
+        printWriter.write(_password+"\n");
         printWriter.flush();
 
         printWriter.write("y\n");
