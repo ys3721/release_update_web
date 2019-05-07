@@ -66,4 +66,29 @@
         <servlet-name>RestartGm</servlet-name>
         <url-pattern>/restartGm.sl</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DownloadConfig</servlet-name>
+        <servlet-class>cn.kaixin.release.DownloadConfigServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadConfig</servlet-name>
+        <url-pattern>/download_config.sl</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RestartServer</servlet-name>
+        <servlet-class>cn.kaixin.release.RestartServerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RestartServer</servlet-name>
+        <url-pattern>/restartServer.sl</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>ck</param-name>
+        <param-value>P7QQQo5o1yx9</param-value>
+    </context-param>
+
 </web-app>
