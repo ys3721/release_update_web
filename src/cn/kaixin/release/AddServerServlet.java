@@ -18,7 +18,7 @@ public class AddServerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String serverId = req.getParameter("serverId").toLowerCase();
-        String domain = req.getParameter("domain").toLowerCase().trim().replace("wss://","");
+        String domain = req.getParameter("domain").toLowerCase().trim().replace("wss://","").replace("ws://", "");
         String lanIp = req.getParameter("lanIp").toLowerCase();
         String wanIp = req.getParameter("wanIp").toLowerCase();
         String serverName = req.getParameter("prefix").toLowerCase();

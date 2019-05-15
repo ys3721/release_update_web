@@ -25,6 +25,7 @@ public class RunDeployServlet extends HttpServlet {
         String server_prefix2 = req.getParameter("serverId2").trim().toLowerCase();
         String server_prefix3 = req.getParameter("serverId3").trim().toLowerCase();
         String server_prefix4 = req.getParameter("serverId4").trim().toLowerCase();
+        String _password = req.getServletContext().getInitParameter("ck");
 
         if (server_prefix1.isEmpty()) {
             return;
@@ -46,16 +47,11 @@ public class RunDeployServlet extends HttpServlet {
         }
         String command = String.format("python add_some_server.py %s", servers_str);
         Process process = Runtime.getRuntime().exec(command, null, new File(ReleaseServerConstants.WORK_BASE_DIR));
-        //try {
-            //process.waitFor();
-        //} catch (InterruptedException e) {
-        //    e.printStackTrace();
-        //}
         PrintWriter printWriter = new PrintWriter(process.getOutputStream());
         printWriter.write("y\n");
         printWriter.flush();
 
-        String _password = req.getServletContext().getInitParameter("ck");
+
         printWriter.write(_password+"\n");
         printWriter.flush();
 
