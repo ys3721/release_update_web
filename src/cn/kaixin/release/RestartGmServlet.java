@@ -15,14 +15,14 @@ public class RestartGmServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Process process = Runtime.getRuntime().exec("shutdown.sh", null, new File("/data0/apache-tomcat-7.0.39/bin/"));
         try {
-            Thread.sleep(TimeUnit.SECONDS.toMillis(30));
+            Thread.sleep(TimeUnit.SECONDS.toMillis(120));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         String cmd = "ps -elf |grep /data0/apache-tomcat-7.0.39/temp | grep -v grep | awk '{print $4}' |xargs kill";
         Runtime.getRuntime().exec(cmd);
         try {
-            Thread.sleep(TimeUnit.SECONDS.toMillis(10));
+            Thread.sleep(TimeUnit.SECONDS.toMillis(60));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
