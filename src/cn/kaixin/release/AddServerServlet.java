@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -24,6 +25,7 @@ public class AddServerServlet extends HttpServlet {
         String serverName = req.getParameter("prefix").toLowerCase();
 
         String content = String.format("%s 1 %s %s %s %s true\n", serverId, domain, lanIp, wanIp, serverName);
+        Logger.getLogger(AddServerServlet.class.getName()).info("添加服务器配置" + content);
 
         String[] configFileStrs = new File(ReleaseServerConstants.SERVERS_CONFIG_DIR).list(new FilenameFilter() {
             @Override
@@ -66,6 +68,8 @@ public class AddServerServlet extends HttpServlet {
         writer.write(content);
         writer.flush();
         writer.close();
+
+        Logger.getLogger(AddServerServlet.class.getName()).info("添加服务器配置" + content);
 
         resp.setHeader("Content-Type","text/html;charset=UTF-8");
         resp.getWriter().println("<html><body>");
