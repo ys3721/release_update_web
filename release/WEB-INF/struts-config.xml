@@ -27,6 +27,7 @@
 
     <form-beans>
         <form-bean name="simpleForm" type="cn.kaixin.probe.SimpleActionForm"/>
+        <form-bean name="orderIdForm" type="cn.kaixin.probe.QueryOrderIdForm"/>
     </form-beans>
 
     <global-exceptions>
@@ -43,6 +44,15 @@
                 cancellable="true"
                 validate="true">
             <forward name="success" path="/pages/probeOK.jsp"/>
+        </action>
+
+        <action path="/queryOrderById"
+                type="cn.kaixin.probe.QueryOrderById"
+                name="orderIdForm"
+                scope="request"
+                cancellable="true"
+                validate="true">
+            <forward name="orderList" path="/pages/orderList.jsp"/>
         </action>
     </action-mappings>
 
