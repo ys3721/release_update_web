@@ -28,6 +28,7 @@
     <form-beans>
         <form-bean name="simpleForm" type="cn.kaixin.probe.SimpleActionForm"/>
         <form-bean name="orderIdForm" type="cn.kaixin.probe.QueryOrderIdForm"/>
+        <form-bean name="exportRoleIdForm" type="cn.kaixin.model.ExportRoleIdForm"/>
     </form-beans>
 
     <global-exceptions>
@@ -53,6 +54,15 @@
                 cancellable="true"
                 validate="true">
             <forward name="orderList" path="/pages/orderList.jsp"/>
+        </action>
+
+        <action path="/exportRole"
+                type="cn.kaixin.export.ExportRoleAction"
+                name="exportRoleIdForm"
+                scope="request"
+                cancellable="true"
+                validate="true">
+            <forward name="success" path="/pages/probeOK.jsp"/>
         </action>
     </action-mappings>
 

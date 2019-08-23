@@ -91,6 +91,10 @@
         <param-value>P7QQQo5o1yx9</param-value>
     </context-param>
 
+    <listener>
+        <listener-class>cn.kaixin.scanner.ScannerBeginRunListener</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>action</servlet-name>
         <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
