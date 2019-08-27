@@ -1,5 +1,6 @@
 package cn.kaixin.probe;
 
+import cn.kaixin.probe.constants.ProbeConstants;
 import cn.kaixin.probe.scanner.ServerStatusService;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -37,7 +38,7 @@ public class ProbeAction extends Action {
         int diskUse = probeForm.getDiskUse();
         long nowMillis = System.currentTimeMillis();
         //FIXME 这个地方用一个global这种保存是不是更好
-        ServerStatusService serverStatusService = (ServerStatusService) _context.getAttribute("serverStatusService");
+        ServerStatusService serverStatusService = (ServerStatusService) _context.getAttribute(ProbeConstants.SERVER_STATUS_SERVICE_NAME);
         serverStatusService.recordServerStatus(serverId, onlineCount, memory, diskUse, nowMillis);
         //FIXME 这个地方改成dao 用mybatis插入吧
         String sql = String.format("insert into t_server_status (server_id, online_count, memory, disk_use, createTime) values( %s, %s, %s, %s, %s)", serverId+"", onlineCount+"", memory+"", diskUse+"",
