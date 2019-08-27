@@ -1,4 +1,4 @@
-package cn.kaixin.scanner;
+package cn.kaixin.probe.scanner;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -8,14 +8,17 @@ import javax.servlet.ServletContextListener;
  */
 public class ScannerBeginRunListener implements ServletContextListener {
 
+    private GameServerAliveScanner scanner;
+
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        GameServerAliveScanner serverAliveScanner = new GameServerAliveScanner();
-        serverAliveScanner.start();
+        //status service
+        ServerStatusService serverStatusService = new ServerStatusService();
+        servletContextEvent.getServletContext().setAttribute("ServerStatusService", serverStatusService);
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-
+        scanner.stop();
     }
 }

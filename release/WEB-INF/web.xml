@@ -92,7 +92,7 @@
     </context-param>
 
     <listener>
-        <listener-class>cn.kaixin.scanner.ScannerBeginRunListener</listener-class>
+        <listener-class>cn.kaixin.probe.scanner.ScannerBeginRunListener</listener-class>
     </listener>
 
     <servlet>

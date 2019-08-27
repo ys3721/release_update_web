@@ -1,4 +1,4 @@
-package cn.kaixin.scanner;
+package cn.kaixin.utils;
 
 import java.security.MessageDigest;
 
