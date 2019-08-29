@@ -47,7 +47,6 @@
 
 
     <build>
-        <directory>H:\sanguoQunYing\relative\release_update_web\release\WEB-INF\</directory>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
