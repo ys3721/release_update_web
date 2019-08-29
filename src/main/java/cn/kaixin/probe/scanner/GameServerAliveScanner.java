@@ -34,7 +34,7 @@ public class GameServerAliveScanner {
     private void initMobiles() {
         //FIXME 这个地方做成读取文件 然后发送吧  作活哇
         this.mobilesNum = new ArrayList<>();
-        //this.mobilesNum.add("13212777262");
+        this.mobilesNum.add("13212777262");
         this.mobilesNum.add("15811302052");
     }
 

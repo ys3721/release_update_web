@@ -35,4 +35,7 @@ public class ServerStatusService {
     }
 
 
+    public void stop() {
+        statusScanner.stop();
+    }
 }

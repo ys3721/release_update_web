@@ -10,8 +10,6 @@ import javax.servlet.ServletContextListener;
  */
 public class ScannerBeginRunListener implements ServletContextListener {
 
-    private GameServerAliveScanner scanner;
-
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         //status service
@@ -21,6 +19,8 @@ public class ScannerBeginRunListener implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        scanner.stop();
+        ServerStatusService serverStatusService = (ServerStatusService) servletContextEvent.getServletContext()
+                .getAttribute(ProbeConstants.SERVER_STATUS_SERVICE_NAME);
+        serverStatusService.stop();
     }
 }
