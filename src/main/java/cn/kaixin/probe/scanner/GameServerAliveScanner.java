@@ -4,6 +4,8 @@ import cn.kaixin.probe.model.ServerStatusInfo;
 import cn.kaixin.utils.HttpUtil;
 import cn.kaixin.utils.MD5Util;
 import cn.kaixin.utils.NamedThreadFactory;
+import cn.kaixin.utils.logger.Loggers;
+import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,7 +37,9 @@ public class GameServerAliveScanner {
         //FIXME 这个地方做成读取文件 然后发送吧  作活哇
         this.mobilesNum = new ArrayList<>();
         this.mobilesNum.add("13212777262");
+        this.mobilesNum.add("15300166100");
         this.mobilesNum.add("15811302052");
+        this.mobilesNum.add("18600918912");
     }
 
     public void start(Map<Integer, ServerStatusInfo> serverStatusSource) {
@@ -52,7 +56,7 @@ public class GameServerAliveScanner {
             try {
                 this.reportServerDown(num, serverId);
             } catch (Exception e) {
-                //FIXME use log4j
+                Loggers.probeLogger.error("发送服务器挂了的消息异常了",e);
                 e.printStackTrace();
             }
         }
@@ -63,7 +67,7 @@ public class GameServerAliveScanner {
             try {
                 this.reportDiskFull(num, serverId);
             } catch (Exception e) {
-                //FIXME use log4j
+                Loggers.probeLogger.error("发送磁盘报警报错，serverid" + serverId, e);
                 e.printStackTrace();
             }
         }
@@ -122,7 +126,7 @@ public class GameServerAliveScanner {
                     //给你们发短息
                     GameServerAliveScanner.this.sendServerDownMsg(_statusInfo.getServerId());
                 }
-                if (_statusInfo.getDiskUse() > 85) {
+                if (_statusInfo.getDiskUse() > 90) {
                     GameServerAliveScanner.this.sendDiskFullWarnMsg(_statusInfo.getServerId());
                 }
             }

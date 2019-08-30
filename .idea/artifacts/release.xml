@@ -25,8 +25,10 @@
           <element id="library" level="project" name="Maven: struts:struts:1.2.9" />
           <element id="library" level="project" name="Maven: xalan:xalan:2.5.1" />
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.9" />
         </element>
       </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/release" />
     </root>
   </artifact>
 </component>
