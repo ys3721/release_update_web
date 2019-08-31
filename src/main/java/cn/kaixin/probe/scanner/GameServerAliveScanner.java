@@ -5,7 +5,6 @@ import cn.kaixin.utils.HttpUtil;
 import cn.kaixin.utils.MD5Util;
 import cn.kaixin.utils.NamedThreadFactory;
 import cn.kaixin.utils.logger.Loggers;
-import sun.rmi.runtime.Log;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -126,7 +125,7 @@ public class GameServerAliveScanner {
                     //给你们发短息
                     GameServerAliveScanner.this.sendServerDownMsg(_statusInfo.getServerId());
                 }
-                if (_statusInfo.getDiskUse() > 90) {
+                if (_statusInfo.getDiskUse() > 92) {
                     GameServerAliveScanner.this.sendDiskFullWarnMsg(_statusInfo.getServerId());
                 }
             }
