@@ -7,6 +7,7 @@ import cn.kaixin.utils.NamedThreadFactory;
 import cn.kaixin.utils.logger.Loggers;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -35,15 +36,15 @@ public class GameServerAliveScanner {
     private void initMobiles() {
         //FIXME 这个地方做成读取文件 然后发送吧  作活哇
         this.mobilesNum = new ArrayList<>();
-        this.mobilesNum.add("13212777262");
-        this.mobilesNum.add("15300166100");
         this.mobilesNum.add("15811302052");
         this.mobilesNum.add("18600918912");
+        this.mobilesNum.add("13212777262");
+        this.mobilesNum.add("15300166100");
     }
 
     public void start(Map<Integer, ServerStatusInfo> serverStatusSource) {
         this.statusInfoMap = serverStatusSource;
-        executorService.scheduleAtFixedRate(new CheckGameServerAliveTask(), 0, 10, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(new CheckGameServerAliveTask(), 0, 60, TimeUnit.SECONDS);
     }
 
     public void stop() {
@@ -72,16 +73,22 @@ public class GameServerAliveScanner {
         }
     }
 
+    private void reportServerDownMail() {
+
+    }
+
     private void reportServerDown(String mobile, int serverId) throws IOException {
         if ((serverId + "").startsWith("9") || serverId == 10086) {
             return;
         }
-        //FIXME 这个地方1908是写死的  要改成simple formate
-        String md5key = MD5Util.createMD5String(mobile + "ASDxcv8234sfsj12" + "19-08");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YY-MM");
+        String yearMonth = simpleDateFormat.format(System.currentTimeMillis());
+        String md5key = MD5Util.createMD5String(mobile + "ASDxcv8234sfsj12" + yearMonth);
         String content = "服务器挂了服务器id" + serverId;
         System.out.println("服务器挂了 " + serverId);
         String _url = String.format("http://interface.kaixin001.com/interface/sms/send.php?mobile=%s&content=\"%s\"&sig=%s&subnum=566002&monitor=base", mobile, content, md5key);
-        HttpUtil.getUrl(_url, 5, false, null);
+        String result = HttpUtil.getUrl(_url, 5, false, null);
+        System.out.println(result);
     }
 
 
