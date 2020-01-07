@@ -125,16 +125,22 @@ public class GameServerAliveScanner {
         @Override
         public void run() {
             long nowMillis = System.currentTimeMillis();
+            List<Integer> _needDel = new ArrayList<>();
             for (Map.Entry<Integer, ServerStatusInfo> _entry : GameServerAliveScanner.this.statusInfoMap.entrySet()) {
                 ServerStatusInfo _statusInfo = _entry.getValue();
                 long lastTime = _statusInfo.getCreateTime();
                 if (lastTime != 0 && nowMillis - lastTime > TimeUnit.MINUTES.toMillis(15)) {
                     //给你们发短息
                     GameServerAliveScanner.this.sendServerDownMsg(_statusInfo.getServerId());
+                    _needDel.add(_statusInfo.getServerId());
                 }
                 if (_statusInfo.getDiskUse() > 92) {
                     GameServerAliveScanner.this.sendDiskFullWarnMsg(_statusInfo.getServerId());
+                    _needDel.add(_statusInfo.getServerId());
                 }
+            }
+            for (Integer _needDelId : _needDel) {
+                GameServerAliveScanner.this.statusInfoMap.remove(_needDelId);
             }
         }
     }
