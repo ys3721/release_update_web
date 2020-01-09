@@ -5,6 +5,6 @@ import org.apache.log4j.Logger;
 
 public class Loggers {
 
-    public static final Logger probeLogger = LogManager.getLogger("probe");
+    public static final Logger probeLogger = LogManager.getLogger("release.probe");
 
 }
