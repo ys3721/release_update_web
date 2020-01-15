@@ -37,9 +37,9 @@ public class EditWeeklyGiftCode extends Action {
             fc.close();
         }*/
         if (iosOrAndroid.equals("ios")) {
-            Runtime.getRuntime().exec("ssh root@10.10.6.107 echo " + code +" >> /data0/wx_www/game-server-robot/ios_week_code.txt");
+            Runtime.getRuntime().exec("ssh root@10.10.6.107 echo " + code +" > /data0/wx_www/game-server-robot/ios_week_code.txt");
         } else {
-            Runtime.getRuntime().exec("ssh root@10.10.6.107 echo " + code +" >> /data0/wx_www/game-server-robot/android_week_code.txt");
+            Runtime.getRuntime().exec("ssh root@10.10.6.107 echo " + code +" > /data0/wx_www/game-server-robot/android_week_code.txt");
         }
         Runtime.getRuntime().exec("ssh root@10.10.6.107 cd /data0/wx_www/game-server-robot && sh run.sh");
         return mapping.findForward("success");
