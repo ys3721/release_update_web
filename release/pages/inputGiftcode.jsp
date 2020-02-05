@@ -28,7 +28,7 @@
     <html:form action="/editWeeklyCode">
         <p>IOS:<br/><html:radio property="iosOrAndroid" value="ios"/></p>
         <p>Android:<br/><html:radio property="iosOrAndroid" value="android"/></p>
-        <p>在这里面写:格式：1月20日-2月2日周礼包一个。礼包内容：元宝*50 银币*2W 初级经验书*2。礼包码：3800dz0bjxqe或3800ftmyh86q<br/><html:text
+        <p>上面先选好，然后在这里面写:格式：1月20日-2月2日周礼包一个。礼包内容：元宝*50 银币*2W 初级经验书*2。礼包码：3800dz0bjxqe或3800ftmyh86q<br/><html:text
                 property="code" size="200" maxlength="500"/></p>
         <p>
             <html:submit>
