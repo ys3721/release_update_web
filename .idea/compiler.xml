@@ -9,7 +9,7 @@
         <module name="release_update_web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="9">
       <module name="release_update_web" target="7" />
     </bytecodeTargetLevel>
   </component>
