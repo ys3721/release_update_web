@@ -1,5 +1,3 @@
-lib/
-
 # Maven
 target/
 *.ser
