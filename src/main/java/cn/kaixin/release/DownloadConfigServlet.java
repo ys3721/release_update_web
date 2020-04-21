@@ -16,6 +16,7 @@ import java.io.*;
  */
 public class DownloadConfigServlet extends HttpServlet {
 
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String _configFileName = req.getParameter("file_name");
         resp.setContentType("application/jar");

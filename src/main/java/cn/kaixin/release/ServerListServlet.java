@@ -63,7 +63,7 @@ public class ServerListServlet extends HttpServlet {
         });
         response.getWriter().println(String.format("<html>%s<body>", this.onclickScript()));
         for (String _fileName : names) {
-            response.getWriter().println("<b onclick=download_config('"+ _fileName + "') >" + _fileName+"<b></br>");
+            response.getWriter().println("<b onclick=download_config('"+ _fileName + "') >" + _fileName+"</b></br>");
         }
         response.getWriter().println("<a href=\"./add_server.html\">来，添加服务器配置</a>");
         response.getWriter().println("</body></html>");
@@ -73,8 +73,7 @@ public class ServerListServlet extends HttpServlet {
     private String onclickScript() {
         StringBuilder _sb = new StringBuilder();
         _sb.append("<script type=\"text/javascript\">");
-        _sb.append("function download_config(file_name) {" +
-                "location='download_config.sl?file_name='+file_name}");
+        _sb.append("function download_config(file_name) {location='download_config.sl?file_name='+file_name}");
         _sb.append("</script>");
         return _sb.toString();
     }

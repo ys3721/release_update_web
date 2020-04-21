@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="484a8423-a472-437b-bf7d-1bc9157f6b75" name="Default Changelist" comment="">
+    <list default="true" id="484a8423-a472-437b-bf7d-1bc9157f6b75" name="Default Changelist" comment="[query order]Modify the create time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/HotReloadSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/HotReloadSender.java" afterDir="false" />
@@ -15,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendClassConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendClassConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/compile/TestCodeCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/compile/TestCodeCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +34,53 @@
     <favorites_list name="release_update_web" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/AddServerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="65" column="107" selection-start-line="65" selection-start-column="107" selection-end-line="65" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/constants/ReleaseServerConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/ShowUpdatePackage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/kaixin/probe/model/NamedThreadFactory.java" />
-        <option value="$PROJECT_DIR$/src/cn/kaixin/utils/NamedThreadFactory.java" />
-        <option value="$PROJECT_DIR$/src/cn/kaixin/probe/ProbeAction.java" />
         <option value="$PROJECT_DIR$/src/cn/kaixin/probe/scanner/ScannerBeginRunListener.java" />
         <option value="$PROJECT_DIR$/src/cn/kaixin/probe/scanner/GameServerAliveScanner.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/probe/scanner/ScannerBeginRunListener.java" />
@@ -121,6 +166,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/model/OrderModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/probe/QueryOrderById.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/kaixin/release/constants/ReleaseServerConstants.java" />
       </list>
     </option>
   </component>
@@ -157,6 +205,90 @@
               <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_update_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_update_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kaixin" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -170,7 +302,7 @@
     <property name="SearchEverywhereHistoryKey" value="entity&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/export/model/TCharacterEntity.java&#10;queryOrderById&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/QueryOrderById.java&#10;SendHotReloadServlet&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java&#10;webx&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/WEB-INF/web.xml&#10;ServerListServlet&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/release/ServerListServlet.java&#10;probe&#9;PSI&#9;JAVA://cn.kaixin.probe.GameProbeServlet&#10;Tentity&#9;PSI&#9;JAVA://cn.kaixin.export.model.TCharacterEntity&#10;groov&#9;PSI&#9;JAVA://javax.swing.text.html.CSSBorder.GrooveRidgePainter&#10;inputGiftcode&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/pages/inputGiftcode.jsp&#10;config&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/WEB-INF/struts-config.xml&#10;SimpleActionForm&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/SimpleActionForm.java&#10;scan&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/scanner/GameServerAliveScanner.java&#10;ameServerAliveScanner&#9;PSI&#9;JAVA://cn.kaixin.probe.scanner.GameServerAliveScanner&#10;log4j&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/resources/log4j.properties&#10;simple&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/SimpleActionForm.java&#10;scanner&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/scanner/GameServerAliveScanner.java&#10;ProbeAction&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/ProbeAction.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587465605241" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587468110329" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/cn/kaixin" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -179,7 +311,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -541,7 +673,7 @@
       <workItem from="1585818679264" duration="10671000" />
       <workItem from="1586093143513" duration="9774000" />
       <workItem from="1586442331276" duration="5037000" />
-      <workItem from="1587459127141" duration="5332000" />
+      <workItem from="1587459127141" duration="6942000" />
     </task>
     <task id="LOCAL-00001" summary="1.添加一个输入框 用于生成配置文件。">
       <created>1554133154701</created>
@@ -781,17 +913,25 @@
       <option name="project" value="LOCAL" />
       <updated>1587465592481</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="[query order]Modify the create time">
+      <created>1587466063387</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1587466063387</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348320000" />
+    <option name="totallyTimeSpent" value="349930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84938705" visible="true" weight="0.17217484" />
-      <window_info id="Structure" order="1" sideWeight="0.50340134" side_tool="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.626151" visible="true" weight="0.17217484" />
+      <window_info id="Structure" order="1" sideWeight="0.37384897" side_tool="true" visible="true" weight="0.17217484" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -802,7 +942,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.5389126" weight="0.4143167" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.3286334" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5724947" visible="true" weight="0.4110629" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.57196164" visible="true" weight="0.4110629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -811,7 +951,7 @@
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49573562" weight="0.3286334" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="11" sideWeight="0.4994664" weight="0.32968238" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.42750534" side_tool="true" visible="true" weight="0.4110629" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.4280384" side_tool="true" visible="true" weight="0.4110629" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49733475" weight="0.3286334" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32876712" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
@@ -910,6 +1050,12 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -951,27 +1097,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/javax/tools/SimpleJavaFileObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="575" column="29" selection-start-line="575" selection-start-column="29" selection-end-line="575" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://G:/Program Files/Java/jdk1.7.0/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1018,13 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="55" selection-start-line="55" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1102,13 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -1307,8 +1418,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="288">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/AddServerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/ShowUpdatePackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/ServerListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="65" column="107" selection-start-line="65" selection-start-column="107" selection-end-line="65" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/DownloadConfigServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/kaixin/release/constants/ReleaseServerConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1318,7 +1464,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>hotreload</last-edited>
+          <last-edited>release</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
