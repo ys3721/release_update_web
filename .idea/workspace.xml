@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="484a8423-a472-437b-bf7d-1bc9157f6b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/HotReloadSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/HotReloadSender.java" afterDir="false" />
@@ -16,9 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendClassConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendClassConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/compile/TestCodeCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kaixin/hotload/compile/TestCodeCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/kaixin/model/OrderModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kaixin/model/OrderModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/kaixin/probe/QueryOrderById.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kaixin/probe/QueryOrderById.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,17 +32,7 @@
     <favorites_list name="release_update_web" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -184,7 +170,7 @@
     <property name="SearchEverywhereHistoryKey" value="entity&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/export/model/TCharacterEntity.java&#10;queryOrderById&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/QueryOrderById.java&#10;SendHotReloadServlet&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/hotload/SendHotReloadServlet.java&#10;webx&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/WEB-INF/web.xml&#10;ServerListServlet&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/release/ServerListServlet.java&#10;probe&#9;PSI&#9;JAVA://cn.kaixin.probe.GameProbeServlet&#10;Tentity&#9;PSI&#9;JAVA://cn.kaixin.export.model.TCharacterEntity&#10;groov&#9;PSI&#9;JAVA://javax.swing.text.html.CSSBorder.GrooveRidgePainter&#10;inputGiftcode&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/pages/inputGiftcode.jsp&#10;config&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/release/WEB-INF/struts-config.xml&#10;SimpleActionForm&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/SimpleActionForm.java&#10;scan&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/scanner/GameServerAliveScanner.java&#10;ameServerAliveScanner&#9;PSI&#9;JAVA://cn.kaixin.probe.scanner.GameServerAliveScanner&#10;log4j&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/resources/log4j.properties&#10;simple&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/SimpleActionForm.java&#10;scanner&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/scanner/GameServerAliveScanner.java&#10;ProbeAction&#9;FILE&#9;file://H:/sanguoQunYing/relative/release_update_web/src/main/java/cn/kaixin/probe/ProbeAction.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587465546380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587465605241" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/cn/kaixin" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -555,7 +541,7 @@
       <workItem from="1585818679264" duration="10671000" />
       <workItem from="1586093143513" duration="9774000" />
       <workItem from="1586442331276" duration="5037000" />
-      <workItem from="1587459127141" duration="4798000" />
+      <workItem from="1587459127141" duration="5332000" />
     </task>
     <task id="LOCAL-00001" summary="1.添加一个输入框 用于生成配置文件。">
       <created>1554133154701</created>
@@ -781,15 +767,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587464972005</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="[query order]Modify the create time">
+      <created>1587465536221</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1587465536221</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[query order]Modify the create time">
+      <created>1587465592481</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1587465592481</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347786000" />
+    <option name="totallyTimeSpent" value="348320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84938705" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="1" sideWeight="0.50340134" side_tool="true" weight="0.2639485" />
