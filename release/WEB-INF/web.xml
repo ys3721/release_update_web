@@ -118,4 +118,13 @@
     <welcome-file-list>
         <welcome-file>/index.html</welcome-file>
     </welcome-file-list>
+
+    <servlet>
+        <servlet-name>SendHotReload</servlet-name>
+        <servlet-class>cn.kaixin.hotload.SendHotReloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendHotReload</servlet-name>
+        <url-pattern>/reload.sl</url-pattern>
+    </servlet-mapping>
 </web-app>

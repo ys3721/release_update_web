@@ -7,4 +7,5 @@ public class Loggers {
 
     public static final Logger probeLogger = LogManager.getLogger("release.probe");
 
+    public static final Logger hotLoadLogger = LogManager.getLogger("release.hotreload");
 }

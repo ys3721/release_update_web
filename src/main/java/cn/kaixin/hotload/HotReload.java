@@ -1,5 +1,7 @@
 package cn.kaixin.hotload;
 
+import io.netty.buffer.ByteBuf;
+
 import javax.tools.Diagnostic;
 import javax.tools.DiagnosticCollector;
 import javax.tools.FileObject;
@@ -12,14 +14,19 @@ import javax.tools.SimpleJavaFileObject;
 import javax.tools.ToolProvider;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.instrument.ClassDefinition;
+import java.lang.instrument.UnmodifiableClassException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -55,21 +62,38 @@ public class HotReload {
         Class clazz = dynamicClassLoader.loadClass("cn.kaixin.hotload.Hello", compiledClassObjects.get(0));
         Object instance = clazz.newInstance();
         System.out.println(instance);
+        Hello hello = new Hello();
+        hello.hello();
         try {
+
             instance.getClass().getDeclaredMethod("hello").invoke(instance);
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
+        } try {
+            FileInputStream fileInputStream = new FileInputStream(new File("H:\\sanguoQunYing\\relative\\release_update_web\\Hello.class"));
+            FileChannel fileChannel = fileInputStream.getChannel();
+            ByteBuffer byteBuffer = ByteBuffer.allocate((int) fileChannel.size());
+            fileChannel.read(byteBuffer);
+            InstrumentHolder.getInstrumentation().redefineClasses(new ClassDefinition(Hello.class, byteBuffer.array()));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnmodifiableClassException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
+        hello.hello();
     }
 
     public static void main(String[] args) {
         HotReload hr = new HotReload();
         try {
             try {
-                hr.compile("cn.kaixin.hotload.Hello", "package cn.kaixin.hotload;\n" + "\n" + "public class Hello {\n" + "    public void hello() {\n" + "        System.out.println(1);\n" + "    }\n" + "}");
+                hr.compile("cn.kaixin.hotload.Hello", "package cn.kaixin.hotload;\n" + "\n" + "public class Hello {\n" + "    public void hello() {\n" + "        System.out.println(\"new hello\");\n" + "    }\n" + "}");
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InstantiationException e) {

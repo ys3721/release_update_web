@@ -1,6 +1,6 @@
 package cn.kaixin.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
@@ -25,6 +25,12 @@ public class OrderModel {
     private int gold;
 
     private String fullCallbackData;
+
+    private String characterData;
+
+    private int platformId;
+
+    private int chargeKindID;
 
     public int getServerId() {
         return serverId;
@@ -91,8 +97,33 @@ public class OrderModel {
         this.orderId = orderId;
     }
 
+    public String getCharacterData() {
+        return characterData;
+    }
+
+    public void setCharacterData(String characterData) {
+        this.characterData = characterData;
+    }
+
+    public int getPlatformId() {
+        return platformId;
+    }
+
+    public void setPlatformId(int platformId) {
+        this.platformId = platformId;
+    }
+
+    public int getChargeKindID() {
+        return chargeKindID;
+    }
+
+    public void setChargeKindID(int chargeKindID) {
+        this.chargeKindID = chargeKindID;
+    }
+
     @Override
     public String toString() {
-        return "orderId=" + orderId + "</br> serverId=" + serverId + "</br> roleId=" + roleId + "</br> orderStatus=" + orderStatus + "</br> createTime=" + createTime + "</br> callbackTime=" + callbackTime + "</br> gold=" + gold + "</br> fullCallbackData='" + fullCallbackData + "</br>";
+        return "orderId=" + orderId + "</br> serverId=" + serverId + "</br> roleId=" + roleId + "</br> orderStatus=" + orderStatus + "</br> createTime=" + createTime + "</br> callbackTime=" + callbackTime + "</br> gold=" + gold + "</br> fullCallbackData='" + fullCallbackData +
+        "</br>characterData=" + characterData + "</br>platformId="+ platformId + "</br>chargeKindID" + chargeKindID;
     }
 }

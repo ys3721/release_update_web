@@ -49,10 +49,11 @@ import java.util.List;
  */
 public class QueryOrderById extends Action {
 
+    @Override
     public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
         QueryOrderIdForm orderIdForm = (QueryOrderIdForm) form;
         long roleId = Long.parseLong(orderIdForm.getRoleId());
-        String sql = String.format("select serverId, roleId, orderStatus, createTime, callbackTime, gold, fullCallbackData, orderId from t_orders where roleId = %s", roleId);
+        String sql = String.format("select serverId, roleId, orderStatus, createTime, callbackTime, gold, fullCallbackData, orderId, characterData, platformId, chargeKindID from t_orders where roleId = %s", roleId);
         //先写道一起了   看看咋能抽象出dao
         Connection connection = this.getMysqlConnection();
         List<OrderModel> orderModelList = new ArrayList<>();
@@ -64,11 +65,14 @@ public class QueryOrderById extends Action {
                 orderModel.setServerId(resultSet.getInt(1));
                 orderModel.setRoleId(resultSet.getLong(2));
                 orderModel.setOrderStatus((byte) resultSet.getInt(3));
-                orderModel.setCreateTime(resultSet.getDate(4));
-                orderModel.setCallbackTime(resultSet.getDate(5));
+                orderModel.setCreateTime(resultSet.getTimestamp(4));
+                orderModel.setCallbackTime(resultSet.getTimestamp(5));
                 orderModel.setGold(resultSet.getInt(6));
                 orderModel.setFullCallbackData(resultSet.getString(7));
                 orderModel.setOrderId(resultSet.getString(8));
+                orderModel.setCharacterData(resultSet.getString(9));
+                orderModel.setPlatformId(resultSet.getInt(10));
+                orderModel.setChargeKindID(resultSet.getInt(11));
                 orderModelList.add(orderModel);
             }
         } finally {
