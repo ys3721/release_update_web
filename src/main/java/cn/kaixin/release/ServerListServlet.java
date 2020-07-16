@@ -52,7 +52,7 @@ public class ServerListServlet extends HttpServlet {
                     try {
                         _index2Int = Integer.parseInt(_index2);
                     } catch (NumberFormatException e) {
-                        return 1;
+                        return -1;
                     }
 
                     return  _indexInt - _index2Int;
