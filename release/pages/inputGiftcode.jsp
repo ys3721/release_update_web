@@ -19,7 +19,8 @@
     <body>
     <h1>改一个激活码</h1>
     <hr noshade="noshade"/>
-
+    <%
+    %>
     <p>Enter information into the fields below. Your entries will be displayed when you Submit the form.<br />
         This is just to demonstrate the Struts html tags. The information that you enter is discarded.</p>
     <p>* = required field</p>

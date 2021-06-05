@@ -25,17 +25,6 @@ public class EditWeeklyGiftCode extends Action {
         EditWeeklyCodeForm codeForm = (EditWeeklyCodeForm) form;
         String code = codeForm.getCode();
         String iosOrAndroid = codeForm.getIosOrAndroid();
-        /*if (iosOrAndroid.equals("ios")) {
-            FileChannel fc = new FileOutputStream("/data0/wx_www/game-server-robot/ios_week_code.txt", false).getChannel();
-            ByteBuffer byteBuffer = ByteBuffer.wrap(code.getBytes());
-            fc.write(byteBuffer);
-            fc.close();
-        } else {
-            FileChannel fc = new FileOutputStream("/data0/wx_www/game-server-robot/ios_week_code.txt", false).getChannel();
-            ByteBuffer byteBuffer = ByteBuffer.wrap(code.getBytes());
-            fc.write(byteBuffer);
-            fc.close();
-        }*/
         if (iosOrAndroid.equals("ios")) {
             Runtime.getRuntime().exec("ssh root@10.10.6.107 echo " + code +" > /data0/wx_www/game-server-robot/ios_week_code.txt");
         } else {
